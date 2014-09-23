@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B167EBD3-A662-40C4-96A0-4F750A31F511</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Nuzzel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C2ABF4A1EC52B5DF969A6F0320D005F906EE8F9E</key>
+		<string>github.com:soulemobile/NuzzelNative.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Nuzzel.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C2ABF4A1EC52B5DF969A6F0320D005F906EE8F9E</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:soulemobile/NuzzelNative.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C2ABF4A1EC52B5DF969A6F0320D005F906EE8F9E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C2ABF4A1EC52B5DF969A6F0320D005F906EE8F9E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NuzzelNative</string>
+		</dict>
+	</array>
+</dict>
+</plist>

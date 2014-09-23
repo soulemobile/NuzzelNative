@@ -24,6 +24,7 @@
 		5FB49246166FDAAA005261C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB4921E166FDAAA005261C6 /* Foundation.framework */; };
 		5FB4924E166FDAAA005261C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FB4924C166FDAAA005261C6 /* InfoPlist.strings */; };
 		5FB49251166FDAAA005261C6 /* NuzzelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB49250166FDAAA005261C6 /* NuzzelTests.m */; };
+		CE7FEA88934C4DB4ADBF1CCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB705238E643E785FA9330 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42CB705238E643E785FA9330 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB49218166FDAAA005261C6 /* Nuzzel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nuzzel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB4921C166FDAAA005261C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FB4921E166FDAAA005261C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +62,7 @@
 		5FB4924D166FDAAA005261C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FB4924F166FDAAA005261C6 /* NuzzelTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuzzelTests.h; sourceTree = "<group>"; };
 		5FB49250166FDAAA005261C6 /* NuzzelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NuzzelTests.m; sourceTree = "<group>"; };
+		DD85197385D64865A6557B6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 				5FB4921D166FDAAA005261C6 /* UIKit.framework in Frameworks */,
 				5FB4921F166FDAAA005261C6 /* Foundation.framework in Frameworks */,
 				5FB49221166FDAAA005261C6 /* CoreGraphics.framework in Frameworks */,
+				CE7FEA88934C4DB4ADBF1CCB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +97,7 @@
 				5FB49249166FDAAA005261C6 /* NuzzelTests */,
 				5FB4921B166FDAAA005261C6 /* Frameworks */,
 				5FB49219166FDAAA005261C6 /* Products */,
+				DD85197385D64865A6557B6E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +117,7 @@
 				5FB4921E166FDAAA005261C6 /* Foundation.framework */,
 				5FB49220166FDAAA005261C6 /* CoreGraphics.framework */,
 				5FB49243166FDAAA005261C6 /* SenTestingKit.framework */,
+				42CB705238E643E785FA9330 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FB49254166FDAAA005261C6 /* Build configuration list for PBXNativeTarget "Nuzzel" */;
 			buildPhases = (
+				7C4FAD29EE21414EA69A4FDB /* Check Pods Manifest.lock */,
 				5FB49214166FDAAA005261C6 /* Sources */,
 				5FB49215166FDAAA005261C6 /* Frameworks */,
 				5FB49216166FDAAA005261C6 /* Resources */,
+				835191EC924642AC87E7447B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,7 +208,7 @@
 			name = NuzzelTests;
 			productName = NuzzelTests;
 			productReference = 5FB49242166FDAAA005261C6 /* NuzzelTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -267,6 +275,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		7C4FAD29EE21414EA69A4FDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		835191EC924642AC87E7447B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -388,6 +426,7 @@
 		};
 		5FB49255166FDAAA005261C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD85197385D64865A6557B6E /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nuzzel/Nuzzel-Prefix.pch";
@@ -399,6 +438,7 @@
 		};
 		5FB49256166FDAAA005261C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD85197385D64865A6557B6E /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nuzzel/Nuzzel-Prefix.pch";
@@ -461,6 +501,7 @@
 				5FB49256166FDAAA005261C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FB49257166FDAAA005261C6 /* Build configuration list for PBXNativeTarget "NuzzelTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +510,7 @@
 				5FB49259166FDAAA005261C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
