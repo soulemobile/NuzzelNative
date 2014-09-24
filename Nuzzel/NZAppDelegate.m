@@ -6,12 +6,15 @@
 //  Copyright (c) 2012 Nuzzel. All rights reserved.
 //
 
+#import <NewRelicAgent/NewRelic.h>
 #import "NZAppDelegate.h"
 
 @implementation NZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	/*** Insert.h added by Insert ***/
+	[NewRelicAgent startWithApplicationToken:@"AA4e6d0fe83b01206f1785ffc92bf21bc404c105d0"];
     // Override point for customization after application launch.
     return YES;
 }

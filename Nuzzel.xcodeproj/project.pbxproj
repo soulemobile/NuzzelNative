@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1120588298E21EE782DB9092 /* Insert.h in Headers */ = {isa = PBXBuildFile; fileRef = AE70DE9827036FA209F3C05D /* Insert.h */; };
+		159CEF89B03383FC618A9319 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8418B99EBEA897CEC25DD61 /* CoreTelephony.framework */; };
 		5FB4921D166FDAAA005261C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB4921C166FDAAA005261C6 /* UIKit.framework */; };
 		5FB4921F166FDAAA005261C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB4921E166FDAAA005261C6 /* Foundation.framework */; };
 		5FB49221166FDAAA005261C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB49220166FDAAA005261C6 /* CoreGraphics.framework */; };
@@ -24,6 +26,10 @@
 		5FB49246166FDAAA005261C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB4921E166FDAAA005261C6 /* Foundation.framework */; };
 		5FB4924E166FDAAA005261C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FB4924C166FDAAA005261C6 /* InfoPlist.strings */; };
 		5FB49251166FDAAA005261C6 /* NuzzelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB49250166FDAAA005261C6 /* NuzzelTests.m */; };
+		8691336366ADBB01B3F862D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C524EB7BFF3B799C97DDE4E0 /* SystemConfiguration.framework */; };
+		9568F3C396A23276EEE67818 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F51DE4D2461DD2907A8EC5 /* libz.dylib */; };
+		A40E7090CD0FB2B712EC1A5D /* NewRelicAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6B79CD0A934E29D65E8FFE /* NewRelicAgent.framework */; };
+		B4D3302FA443B388E90C06AD /* Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4542BD3DF1C5708305EC8F2D /* Insert.m */; };
 		CE7FEA88934C4DB4ADBF1CCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB705238E643E785FA9330 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36F51DE4D2461DD2907A8EC5 /* libz.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		42CB705238E643E785FA9330 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4542BD3DF1C5708305EC8F2D /* Insert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Insert.m; path = Vendor/Insert.m; sourceTree = "<group>"; };
 		5FB49218166FDAAA005261C6 /* Nuzzel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nuzzel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB4921C166FDAAA005261C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FB4921E166FDAAA005261C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,6 +70,10 @@
 		5FB4924D166FDAAA005261C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FB4924F166FDAAA005261C6 /* NuzzelTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NuzzelTests.h; sourceTree = "<group>"; };
 		5FB49250166FDAAA005261C6 /* NuzzelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NuzzelTests.m; sourceTree = "<group>"; };
+		AC6B79CD0A934E29D65E8FFE /* NewRelicAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewRelicAgent.framework; path = Vendor/NewRelicAgent.framework; sourceTree = "<group>"; };
+		AE70DE9827036FA209F3C05D /* Insert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Insert.h; path = Vendor/Insert.h; sourceTree = "<group>"; };
+		B8418B99EBEA897CEC25DD61 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		C524EB7BFF3B799C97DDE4E0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		DD85197385D64865A6557B6E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +86,10 @@
 				5FB4921F166FDAAA005261C6 /* Foundation.framework in Frameworks */,
 				5FB49221166FDAAA005261C6 /* CoreGraphics.framework in Frameworks */,
 				CE7FEA88934C4DB4ADBF1CCB /* libPods.a in Frameworks */,
+				A40E7090CD0FB2B712EC1A5D /* NewRelicAgent.framework in Frameworks */,
+				159CEF89B03383FC618A9319 /* CoreTelephony.framework in Frameworks */,
+				8691336366ADBB01B3F862D5 /* SystemConfiguration.framework in Frameworks */,
+				9568F3C396A23276EEE67818 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301CEB6B3BC5C8826C7D7F41 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				AE70DE9827036FA209F3C05D /* Insert.h */,
+				4542BD3DF1C5708305EC8F2D /* Insert.m */,
+				AC6B79CD0A934E29D65E8FFE /* NewRelicAgent.framework */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
 		5FB4920D166FDAAA005261C6 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +124,7 @@
 				5FB4921B166FDAAA005261C6 /* Frameworks */,
 				5FB49219166FDAAA005261C6 /* Products */,
 				DD85197385D64865A6557B6E /* Pods.xcconfig */,
+				301CEB6B3BC5C8826C7D7F41 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +145,8 @@
 				5FB49220166FDAAA005261C6 /* CoreGraphics.framework */,
 				5FB49243166FDAAA005261C6 /* SenTestingKit.framework */,
 				42CB705238E643E785FA9330 /* libPods.a */,
+				E879C77F19CCDB46B2507AD3 /* iOS */,
+				36F51DE4D2461DD2907A8EC5 /* libz.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,7 +198,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E879C77F19CCDB46B2507AD3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B8418B99EBEA897CEC25DD61 /* CoreTelephony.framework */,
+				C524EB7BFF3B799C97DDE4E0 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0171937070A626626AFA11A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1120588298E21EE782DB9092 /* Insert.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5FB49217166FDAAA005261C6 /* Nuzzel */ = {
@@ -181,6 +230,7 @@
 				5FB49215166FDAAA005261C6 /* Frameworks */,
 				5FB49216166FDAAA005261C6 /* Resources */,
 				835191EC924642AC87E7447B /* Copy Pods Resources */,
+				0171937070A626626AFA11A7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -316,6 +366,7 @@
 				5FB49229166FDAAA005261C6 /* main.m in Sources */,
 				5FB4922D166FDAAA005261C6 /* NZAppDelegate.m in Sources */,
 				5FB4923C166FDAAA005261C6 /* NZViewController.m in Sources */,
+				B4D3302FA443B388E90C06AD /* Insert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +479,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD85197385D64865A6557B6E /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Vendor",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nuzzel/Nuzzel-Prefix.pch";
 				INFOPLIST_FILE = "Nuzzel/Nuzzel-Info.plist";
@@ -440,6 +495,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD85197385D64865A6557B6E /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Vendor",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nuzzel/Nuzzel-Prefix.pch";
 				INFOPLIST_FILE = "Nuzzel/Nuzzel-Info.plist";
