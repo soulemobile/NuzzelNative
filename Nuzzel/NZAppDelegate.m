@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Nuzzel. All rights reserved.
 //
 
+#import "ATConnect.h"
 #import <NewRelicAgent/NewRelic.h>
 #import "NZAppDelegate.h"
 
@@ -13,6 +14,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	/*** Insert.h added by Insert ***/
+	[ATConnect sharedConnection].apiKey = @"<customer_token>";
 	/*** Insert.h added by Insert ***/
 	[NewRelicAgent startWithApplicationToken:@"AA4e6d0fe83b01206f1785ffc92bf21bc404c105d0"];
     // Override point for customization after application launch.
